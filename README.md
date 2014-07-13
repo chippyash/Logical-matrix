@@ -2,8 +2,8 @@
 
 ## Quality Assurance
 
-[![Build Status](https://travis-ci.org/chippyash/Matrix.svg?branch=master)](https://travis-ci.org/chippyash/Matrix)
-[![Coverage Status](https://coveralls.io/repos/chippyash/Matrix/badge.png)](https://coveralls.io/r/chippyash/Matrix)
+[![Build Status](https://travis-ci.org/chippyash/Logical-matrix.svg?branch=master)](https://travis-ci.org/chippyash/Logical-matrix)
+[![Coverage Status](https://coveralls.io/repos/chippyash/Logical-matrix/badge.png)](https://coveralls.io/r/chippyash/Logical-matrix)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/b8a7e3f8-d33a-435f-a0e7-a4fdfb2e8318/mini.png)](https://insight.sensiolabs.com/projects/b8a7e3f8-d33a-435f-a0e7-a4fdfb2e8318)
 
 ## What?
