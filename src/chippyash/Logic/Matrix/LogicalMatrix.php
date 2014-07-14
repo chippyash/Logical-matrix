@@ -10,6 +10,7 @@ namespace chippyash\Logic\Matrix;
 
 use chippyash\Matrix\Matrix;
 use chippyash\Logic\Matrix\Interfaces\OperationInterface;
+use chippyash\Matrix\Interfaces\TransformationInterface;
 
 /**
  * Construct a matrix with all entries set to true or false (1 or 0)
@@ -89,6 +90,18 @@ class LogicalMatrix extends Matrix
         return $operation->operate($this, $extra);
     }
 
+    /**
+     *
+     * @param \chippyash\Matrix\Interfaces\TransformationInterface $transformation
+     * @param mixed $extra
+     *
+     * @return LogicalMatrix
+     */
+    public function transform(TransformationInterface $transformation, $extra = null)
+    {
+        return new LogicalMatrix(parent::transform($transformation, $extra)->toArray());
+    }
+    
     /**
      * Invokable interface - allows object to be called as function
      * Proxies to operate e.g.
