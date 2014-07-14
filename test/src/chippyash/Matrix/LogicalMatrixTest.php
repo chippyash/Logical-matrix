@@ -145,5 +145,13 @@ class LogicalMatrixTest extends \PHPUnit_Framework_TestCase
         $mA('foo','bar','baz');
     }
 
+    public function testTransformReturnsLogicalMatrix()
+    {
+        $t = new \chippyash\Matrix\Transformation\Transpose();
+        $mA = new LogicalMatrix([]);
+        $this->assertInstanceOf(
+                'chippyash\Logic\Matrix\LogicalMatrix',
+                $mA->transform($t));
+    }
 
 }
