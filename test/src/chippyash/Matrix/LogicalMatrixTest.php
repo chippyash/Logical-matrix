@@ -3,6 +3,7 @@
 namespace chippyash\Test\Logic\Matrix;
 
 use chippyash\Logic\Matrix\LogicalMatrix;
+use chippyash\Matrix\Matrix;
 
 /**
  * Unit test for LogicalMatrix Class
@@ -60,6 +61,20 @@ class LogicalMatrixTest extends \PHPUnit_Framework_TestCase
     {
         $mA = new LogicalMatrix([[1, 0, -3.6, 'foo', '', new \stdClass()]]);
         $this->assertEquals([[true,false,true,true,false,true]], $mA->toArray());
+    }
+
+    public function testConstructWithMatrixParamReturnsLogicalMatrixDataClone()
+    {
+        $mA = new Matrix([['foo',false],[1,15.2]]);
+        $mB = new LogicalMatrix($mA);
+        $this->assertEquals([[true,false],[true,true]], $mB->toArray());
+    }
+
+    public function testConstructWithLogicalMatrixParamReturnsLogicalMatrixDataClone()
+    {
+        $mA = new LogicalMatrix([['foo',false],[1,15.2]]);
+        $mB = new LogicalMatrix($mA);
+        $this->assertEquals($mA->toArray(), $mB->toArray());
     }
 
     public function testCallTestWithValidClassReturnsResult()
@@ -153,5 +168,4 @@ class LogicalMatrixTest extends \PHPUnit_Framework_TestCase
                 'chippyash\Logic\Matrix\LogicalMatrix',
                 $mA->transform($t));
     }
-
 }

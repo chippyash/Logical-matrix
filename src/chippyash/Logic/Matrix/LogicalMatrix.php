@@ -23,23 +23,23 @@ class LogicalMatrix extends Matrix
 
     /**
      * Construct a complete Matrix with all entries set to true or false (1 or 0)
-     * Takes a source array (which can be incomplete and converts each entry to
-     * boolean, setting a default value if entry does not exist
+     * Takes a source matrix or array (which can be incomplete and converts each
+     * entry to boolean, setting a default value if entry does not exist.
      *
-     * @param array $source Array to initialise the matrix with
+     * If a Matrix is supplied as $source, the data is cloned into the LogicalMatrix
+     * converting to boolean values, with no further checks
+     *
+     * @param Matrix|array $source Array to initialise the matrix with
      * @param mixed $normalizeDefault Value to set missing vertices
      *
      */
-    public function __construct(array $source, $normalizeDefault = false)
+    public function __construct($source, $normalizeDefault = false)
     {
-        if (!empty($source) && !is_array($source[0])) {
-            $source = [$source];
+        if ($source instanceof Matrix) {
+            $this->store($source->toArray());
+            return;
         }
-        foreach ($source as &$row) {
-            foreach ($row as &$item) {
-                $item = (boolean) $item;
-            }
-        }
+
         parent::__construct($source, false, true, (boolean) $normalizeDefault);
     }
 
@@ -101,7 +101,7 @@ class LogicalMatrix extends Matrix
     {
         return new LogicalMatrix(parent::transform($transformation, $extra)->toArray());
     }
-    
+
     /**
      * Invokable interface - allows object to be called as function
      * Proxies to operate e.g.
@@ -146,4 +146,36 @@ class LogicalMatrix extends Matrix
         throw new \InvalidArgumentException(self::ERR_INVALID_OP_NAME);
     }
 
+    /**
+     * Store the data, converting each entry to a boolean
+     *
+     * @overideAncestor
+     *
+     * @param array $data
+     *
+     * @return void
+     */
+    protected function store(array $data)
+    {
+        foreach ($data as &$row) {
+            foreach ($row as &$item) {
+                $item = (boolean) $item;
+            }
+        }
+
+        $this->data = $data;
+    }
+
+/** Operator extension facilitation **/
+
+    public function __bw_or($other)
+    {var_dump($other);exit;
+        if ($other instanceof LogicalMatrix) {
+            $op = new \chippyash\Logic\Matrix\Operation\OrMatrix();
+        } elseif(is_bool($other)) {
+            $op = new \chippyash\Logic\Matrix\Operation\OrOperand();
+        }
+
+        return $this->operate($op, $other);
+    }
 }
