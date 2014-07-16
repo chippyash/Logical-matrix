@@ -166,16 +166,4 @@ class LogicalMatrix extends Matrix
         $this->data = $data;
     }
 
-/** Operator extension facilitation **/
-
-    public function __bw_or($other)
-    {var_dump($other);exit;
-        if ($other instanceof LogicalMatrix) {
-            $op = new \chippyash\Logic\Matrix\Operation\OrMatrix();
-        } elseif(is_bool($other)) {
-            $op = new \chippyash\Logic\Matrix\Operation\OrOperand();
-        }
-
-        return $this->operate($op, $other);
-    }
 }
