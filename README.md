@@ -15,6 +15,22 @@ chippyash/Matrix matrix data structure library:
 *  Everything has a test case
 *  It's PHP 5.4+
 
+## When
+
+The current library covers basic matrix manipulation.  The library will cover most
+well known generic matrix transformations and derivatives.
+
+If you want more, either suggest it, or better still, fork it and provide a pull request.
+
+Check out [chippyash/Matrix](https://github.com/chippyash/Matrix) for Matrix data type support.
+
+Check out [chippyash/Math-Matrix](https://github.com/chippyash/Math-Matrix) for mathematical matrix operations
+
+Check out [chippyash/Strong-Type](https://github.com/chippyashl/Strong-Type) for strong type including numeric,
+rational and complex type support
+
+Check out [chippyash/Math-Type-Calculator](https://github.com/chippyash/Math-Type-Calculator) for arithmetic operations on aforementioned strong types
+
 ### Operations supported
 
 *  AndMatrix - return the result of two matrices ANDed
@@ -29,7 +45,7 @@ The library is released under the [GNU GPL V3 or later license](http://www.gnu.o
 
 ## How
 
-Please see the [Basic Matrix](https://github.com/chippyash/Matrix) for underlying
+Please see the [chippyash/Matrix](https://github.com/chippyash/Matrix) for underlying
 functionality.  Anything you can do with a Matrix, you can do with a LogicalMatrix.
 
 ### Coding Basics
@@ -147,3 +163,12 @@ To run the tests:
     cd LogicMatrix
     vendor/bin/phpunit -c test/phpunit.xml test/
 </pre>
+
+
+## History
+
+V0...  pre releases
+
+V1.0.0 Original release
+
+V1.0.4 Update for underlying library dependency
