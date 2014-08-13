@@ -171,4 +171,4 @@ V0...  pre releases
 
 V1.0.0 Original release
 
-V1.0.4 Update for underlying library dependency
+V1.0.5 Update for underlying library dependency
