@@ -31,6 +31,8 @@ rational and complex type support
 
 Check out [chippyash/Math-Type-Calculator](https://github.com/chippyash/Math-Type-Calculator) for arithmetic operations on aforementioned strong types
 
+Check out [chippyash/Builder-Pattern](https://github.com/chippyash/Builder-Pattern) for an implementation of the Builder Pattern for PHP
+
 ### Operations supported
 
 *  AndMatrix - return the result of two matrices ANDed
@@ -172,3 +174,5 @@ V0...  pre releases
 V1.0.0 Original release
 
 V1.0.5 Update for underlying library dependency
+
+V1.0.6 Update phpunit version
