@@ -2,6 +2,7 @@
     "name": "chippyash/logic-matrix",
     "description": "PHP Logical Matrix package",
     "license": "GPL-3.0+",
+    "homepage" : "http://the-matrix.github.io/",
     "authors": [
         {
             "name": "Ashley Kitson",
