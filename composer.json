@@ -2,7 +2,7 @@
     "name": "chippyash/logic-matrix",
     "description": "PHP Logical Matrix package",
     "license": "GPL-3.0+",
-    "homepage" : "http://the-matrix.github.io/",
+    "homepage" : "http://the-matrix.github.io/packages",
     "authors": [
         {
             "name": "Ashley Kitson",
@@ -11,17 +11,16 @@
     ],
     "require": {
         "php": ">=5.4",
-        "chippyash/matrix" : "~1.2.8"
+        "chippyash/matrix" : "~2"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.3.0",
-        "satooshi/php-coveralls" : "dev-master"
+        "phpunit/phpunit": "~4.8"
     },
 
     "autoload": {
 
         "psr-0": {
-            "chippyash\\Logic\\Matrix\\": "src/"
+            "Chippyash\\Logic\\Matrix\\": "src/"
         }
     }
 }

@@ -2,10 +2,9 @@
 
 ## Quality Assurance
 
-[![Build Status](https://travis-ci.org/chippyash/Logical-matrix.svg?branch=master)](https://travis-ci.org/chippyash/Logical-matrix)
-[![Coverage Status](https://coveralls.io/repos/chippyash/Logical-matrix/badge.png)](https://coveralls.io/r/chippyash/Logical-matrix)
+Certified for PHP 5.4 - 5.6
 
-I'll add the Sensio labs analysis when it gets fixed!
+[![Build Status](https://travis-ci.org/chippyash/Logical-matrix.svg?branch=master)](https://travis-ci.org/chippyash/Logical-matrix)
 
 ## What?
 
@@ -17,8 +16,7 @@ chippyash/Matrix matrix data structure library:
 
 ## When
 
-The current library covers basic matrix manipulation.  The library will cover most
-well known generic matrix transformations and derivatives.
+The current library covers basic logical matrix manipulation.
 
 If you want more, either suggest it, or better still, fork it and provide a pull request.
 
@@ -144,7 +142,7 @@ Install [Composer](https://getcomposer.org/)
 add
 
 <pre>
-    "chippyash/logical-matrix": "~1.0"
+    "chippyash/logical-matrix": "~2.0"
 </pre>
 
 to your composer.json "requires" section
@@ -176,3 +174,5 @@ V1.0.0 Original release
 V1.0.5 Update for underlying library dependency
 
 V1.0.6 Update phpunit version
+
+V2.0.0 BC Break: change namespace from chippyash to Chippyash
