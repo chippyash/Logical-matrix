@@ -5,6 +5,8 @@
 Certified for PHP 5.4 - 5.6
 
 [![Build Status](https://travis-ci.org/chippyash/Logical-matrix.svg?branch=master)](https://travis-ci.org/chippyash/Logical-matrix)
+[![Test Coverage](https://codeclimate.com/github/chippyash/Logical-matrix/badges/coverage.svg)](https://codeclimate.com/github/chippyash/Logical-matrix/coverage)
+[![Code Climate](https://codeclimate.com/github/chippyash/Logical-matrix/badges/gpa.svg)](https://codeclimate.com/github/chippyash/Logical-matrix)
 
 ## What?
 
@@ -100,9 +102,19 @@ A Logical Matrix type is supplied
 <pre>
     $mC = $mA("AndMatrix", $mB);
     //same as :
-    $comp = new Logic\Matrix\Operation\AndMatrix;
-    $mC = $comp($mA, $mB);
+    $op = new Logic\Matrix\Operation\AndMatrix;
+    $mC = $op($mA, $mB);
 </pre>
+
+The following operations are supplied:
+
+- AndMatrix - AND two matrices
+- AndOperand - AND matrix with boolean
+- Not - NOT a matrix
+- OrMatrix - OR two matrices
+- OrOperand - OR matrix with boolean
+- XorMatrix - XOR two matrices
+- XorOperand - XOR matrix with boolean
 
 #### The magic invoke methods allow you to write in a functional way
 

@@ -19,8 +19,8 @@ before_script:
 script:
   - vendor/bin/phpunit --configuration phpunit.travis.xml --coverage-clover build/logs/clover.xml
 
-#after_script:
-#  - php vendor/bin/coveralls -v
+after_script:
+  - ./vendor/bin/test-reporter
 
 # configure notifications (email, IRC, campfire etc)
 notifications:
