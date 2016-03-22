@@ -26,12 +26,7 @@ Check out [chippyash/Matrix](https://github.com/chippyash/Matrix) for Matrix dat
 
 Check out [chippyash/Math-Matrix](https://github.com/chippyash/Math-Matrix) for mathematical matrix operations
 
-Check out [chippyash/Strong-Type](https://github.com/chippyashl/Strong-Type) for strong type including numeric,
-rational and complex type support
-
-Check out [chippyash/Math-Type-Calculator](https://github.com/chippyash/Math-Type-Calculator) for arithmetic operations on aforementioned strong types
-
-Check out [chippyash/Builder-Pattern](https://github.com/chippyash/Builder-Pattern) for an implementation of the Builder Pattern for PHP
+Check out [ZF4 Packages](http://zf4.biz/packages?utm_source=github&utm_medium=web&utm_campaign=blinks&utm_content=logicmatrix) for more packages
 
 ### Operations supported
 
@@ -197,3 +192,5 @@ V1.0.5 Update for underlying library dependency
 V1.0.6 Update phpunit version
 
 V2.0.0 BC Break: change namespace from chippyash to Chippyash
+
+V2.0.1 Add link to packages
