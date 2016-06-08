@@ -2,8 +2,10 @@
 
 ## Quality Assurance
 
-Certified for PHP 5.4 - 5.6
-
+![PHP 5.4](https://img.shields.io/badge/PHP-5.4-blue.svg)
+![PHP 5.5](https://img.shields.io/badge/PHP-5.5-blue.svg)
+![PHP 5.6](https://img.shields.io/badge/PHP-5.6-blue.svg)
+![PHP 7](https://img.shields.io/badge/PHP-7-blue.svg)
 [![Build Status](https://travis-ci.org/chippyash/Logical-matrix.svg?branch=master)](https://travis-ci.org/chippyash/Logical-matrix)
 [![Test Coverage](https://codeclimate.com/github/chippyash/Logical-matrix/badges/coverage.svg)](https://codeclimate.com/github/chippyash/Logical-matrix/coverage)
 [![Code Climate](https://codeclimate.com/github/chippyash/Logical-matrix/badges/gpa.svg)](https://codeclimate.com/github/chippyash/Logical-matrix)
@@ -194,3 +196,5 @@ V1.0.6 Update phpunit version
 V2.0.0 BC Break: change namespace from chippyash to Chippyash
 
 V2.0.1 Add link to packages
+
+V2.0.2 Verify PHP7 compatibility
