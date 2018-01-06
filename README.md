@@ -207,3 +207,5 @@ V2.0.0 BC Break: change namespace from chippyash to Chippyash
 V2.0.1 Add link to packages
 
 V2.0.2 Verify PHP7 compatibility
+
+V2.0.3 Update build script
