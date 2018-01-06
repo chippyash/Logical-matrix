@@ -10,6 +10,15 @@
 [![Test Coverage](https://codeclimate.com/github/chippyash/Logical-matrix/badges/coverage.svg)](https://codeclimate.com/github/chippyash/Logical-matrix/coverage)
 [![Code Climate](https://codeclimate.com/github/chippyash/Logical-matrix/badges/gpa.svg)](https://codeclimate.com/github/chippyash/Logical-matrix)
 
+See the [Test Contract](https://github.com/chippyash/Logical-matrix/blob/master/docs/Test-Contract.md)
+
+### End of life notice
+
+In March 2018, developer support will be withdrawn from this library for PHP <5.6. Older
+versions of PHP are now in such little use that the added effort of maintaining 
+compatibility is not effort effective.  See [PHP Version Stats](https://seld.be/notes/php-versions-stats-2017-1-edition)
+ for the numbers.
+
 ## What?
 
 This library aims to provide logic matrix functionality and builds on the

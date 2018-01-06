@@ -42,14 +42,20 @@ testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"
      ! blacklist and whitelist for the code coverage reporting.
      !-->
     <filter>
-        <blacklist>
-            <directory>./vendor</directory>
-            <!-- don't cover interfaces- nothing to test! -->
-            <directory>./src/Chippyash/Logic/Matrix/Interfaces</directory>
-        </blacklist>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory>./src</directory>
+            <exclude>
+                <directory>./docs</directory>
+                <directory>./test</directory>
+                <directory>./vendor</directory>
+                <!-- don't cover interfaces- nothing to test! -->
+                <directory>./src/Chippyash/Logic/Matrix/Interfaces</directory>
+            </exclude>
+        </whitelist>
     </filter>
-
-
+    <logging>
+        <log type="coverage-clover" target="./build/logs/clover.xml"/>
+    </logging>
 </phpunit>
 
 
